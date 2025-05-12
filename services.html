@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SoleRush - Services</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    .services-header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .services-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .services-header p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .service-card img {
+      width: 60px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SoleRush</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="services-header">
+    <h2>Our Services</h2>
+    <p>Explore what SoleRush offers to enhance your sneaker game.</p>
+  </section>
+
+  <section class="service-grid">
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/679/679922.png" alt="Custom Fitting">
+      <h3>Custom Fitting</h3>
+      <p>Get professionally tailored advice to find the perfect fit and comfort for your feet.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3514/3514491.png" alt="Shoe Repair">
+      <h3>Shoe Repair</h3>
+      <p>Bring your favorite pairs back to life with our expert sneaker restoration services.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Style Advice">
+      <h3>Style Advice</h3>
+      <p>Let our fashion experts help you match sneakers with your outfit and lifestyle.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/122/122454.png" alt="Fast Delivery">
+      <h3>Fast Delivery</h3>
+      <p>Enjoy quick, reliable, and safe delivery to your doorstep — wherever you are.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SoleRush. All rights reserved.</p>
+  </footer>
+</body>
+</html>

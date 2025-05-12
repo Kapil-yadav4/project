@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - SoleRush</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 60px 40px;
+      background: #fff;
+    }
+
+    section h2, section h3 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .values-grid, .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .value-card, .member {
+      flex: 1 1 250px;
+      background: #f7f7f7;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .value-card h4 {
+      color: #f39c12;
+      margin-bottom: 10px;
+    }
+
+    .member img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .timeline-item {
+      max-width: 600px;
+      margin: 20px auto;
+      padding-left: 20px;
+      border-left: 4px solid #f39c12;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: #f39c12;
+      border-radius: 50%;
+      position: absolute;
+      left: -8px;
+      top: 6px;
+    }
+
+    .testimonials {
+      background: #f2f2f2;
+    }
+
+    .testimonial-card {
+      background: white;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    .testimonial-card p {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-card strong {
+      color: #f39c12;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SoleRush</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>About SoleRush</h2>
+      <p style="text-align: center; max-width: 800px; margin: auto;">
+        At SoleRush, we’re more than a sneaker brand. We are a movement. Born out of a passion for authentic footwear and urban culture, SoleRush has been stepping up the sneaker game since 2020.
+      </p>
+    </section>
+
+    <section class="core-values">
+      <h3>Our Core Values</h3>
+      <div class="values-grid">
+        <div class="value-card">
+          <h4>Authenticity</h4>
+          <p>We only sell original, verified sneakers. No fakes. Ever.</p>
+        </div>
+        <div class="value-card">
+          <h4>Style</h4>
+          <p>We live and breathe sneaker culture. We curate for trendsetters.</p>
+        </div>
+        <div class="value-card">
+          <h4>Customer First</h4>
+          <p>Our service is built to delight — fast support, smooth shopping.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <h3>Meet the Team</h3>
+      <div class="team-members">
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="CEO"/>
+          <h4>Raj Patel</h4>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Creative Head"/>
+          <h4>Anjali Verma</h4>
+          <p>Creative Director</p>
+        </div>
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Tech Lead"/>
+          <h4>Aman Khanna</h4>
+          <p>Lead Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <h3>Our Journey</h3>
+      <div class="timeline-item">
+        <h4>2020 - Launched SoleRush</h4>
+        <p>Started with just 12 designs and a dream.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>2021 - First 10K Orders</h4>
+        <p>Grew rapidly through social media buzz and loyal fans.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>2023 - Artist Collaborations</h4>
+        <p>Launched limited edition sneakers with Indian creatives.</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h3>What People Are Saying</h3>
+      <div class="testimonial-card">
+        <p>"Absolutely love the vibe of SoleRush! Got my kicks in 2 days."</p>
+        <strong>- Sneha R.</strong>
+      </div>
+      <div class="testimonial-card">
+        <p>"Authentic products and their customer support is top-notch."</p>
+        <strong>- Arjun M.</strong>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SoleRush. All rights reserved.</p>
+  </footer>
+</body>
+</html>

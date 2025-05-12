@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SoleRush - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f2f2f2;
+      color: #333;
+      background-color: rebeccapurple;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1603808033192-082d6919d7d6?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background: #f39c12;
+      color: #fff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: #e67e22;
+      transform: scale(1.05);
+    }
+
+    .products {
+      padding: 60px 40px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .products h3 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #222;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: #f9f9f9;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-info h4 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .product-info p {
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .products {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SoleRush</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Step Into Style</h2>
+    <p>Discover the freshest sneakers and lifestyle shoes in town.</p>
+    <button onclick="alert('Shop feature coming soon!')">Shop Now</button>
+  </section>
+
+  <section class="products">
+    <h3>Featured Shoes</h3>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/download (2).jpeg" alt="Sneaker 1">
+        <div class="product-info">
+          <h4>Air Max 2025</h4>
+          <p>Lightweight. Stylish. Iconic.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/8460885007_grande.webp" alt="Sneaker 2">
+        <div class="product-info">
+          <h4>Urban Runner</h4>
+          <p>Comfort meets the street.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/shopping (1).webp" alt="Sneaker 3">
+        <div class="product-info">
+          <h4>Classic White</h4>
+          <p>Timeless elegance for any fit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SoleRush. All rights reserved.</p>
+  </footer>
+</body>
+</html>
